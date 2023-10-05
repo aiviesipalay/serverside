@@ -13,7 +13,11 @@ const app = express();
 const PORT = 4000;
 main();
 app.use(express.json());
-app.use(cors());
+app.use(cors(
+  {
+    origin: ['https://client1-0qxr.onrender.com']
+  }
+));
 
 // Store API
 app.use("/api/store", storeRoute);
