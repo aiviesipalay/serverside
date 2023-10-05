@@ -6,8 +6,7 @@ const purchaseRoute = require("./router/purchase");
 const salesRoute = require("./router/sales");
 const cors = require("cors");
 const User = require("./models/users");
-const Product = require("./models/Product");
-
+const Product = require("./models/products");
 
 const app = express();
 const PORT = 4000;
